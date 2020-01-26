@@ -1,0 +1,88 @@
+@import "reset.css";
+
+body {
+    background-color : #f6f9fc;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    padding-top : 50px;
+}
+
+.controls {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas {
+    width : 550px;
+    height : 550px;
+    background-color : white; 
+    box-shadow : 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius : 10px;
+}
+
+.control-colors {
+    display : flex;
+}
+
+.colors {
+    width : 50px;
+    height : 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top : 10px;
+    box-shadow : 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.js-range {
+    margin-top : 20px;
+}
+
+.js-btns {
+    all : unset;
+    text-align: center;
+    border : 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform : uppercase;
+    margin-top : 10px;
+    margin-left : 2px;
+    width : 80px;
+    height : 25px;
+    box-shadow : 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.js-btns:active {
+    transform : scale(0.98);
+}
+
+.control-range,
+.control-btns {
+    display : flex;
+    align-items: center;
+}
+
+.js-range {
+    -webkit-appearance: none;
+}
+.js-range:focus {
+    outline: none;
+}
+.js-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: #2c2c2c;
+    opacity : 0.3;
+}
+.js-range::-webkit-slider-thumb {
+    border: 1px solid #2c2c2c;
+    height: 11px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+}
